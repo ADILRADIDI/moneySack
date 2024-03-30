@@ -1,3 +1,12 @@
+:root {
+    --black: #111;
+    --white: #ffffff;
+    --background: #191d88;
+    --light-background:#333A73;
+    --orange-: #FBA834;
+    --primary-blue: #387ADF;
+    --light-blue: #50C4ED;
+}
 body {
   background-color: #191d88;
   text-decoration: none;
