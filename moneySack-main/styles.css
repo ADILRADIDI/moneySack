@@ -1,5 +1,3 @@
-
-
 :root {
   --black: #111;
   --white: #ffffff;
@@ -20,7 +18,7 @@ body {
 /*style header*/
 .links {
   margin-top: 1rem;
- }
+}
 .links a {
   color: white;
   padding-left: 20px;
@@ -29,11 +27,9 @@ body {
   font-weight: bold;
 }
 
-
 .button_nav {
   margin-top: 1rem;
 }
-
 
 .button_nav button {
   width: 251px;
@@ -46,13 +42,11 @@ body {
   border: 0px;
   position: relative;
   bottom: 15px;
-  
-  }
- 
+}
+
 button {
   background-image: linear-gradient(#397edf, #4ec0eb);
-     }
- 
+}
 
 .container {
   display: flex;
@@ -144,11 +138,6 @@ button {
   margin: 0 auto;
   margin-bottom: 3rem;
 }
-/* .button_nav .button {
-  
-  background-image: linear-gradient(#397edf, #4ec0eb);
-} */
-
 
 .button-nav {
   text-decoration: none;
@@ -192,20 +181,27 @@ button {
   padding-top: 20px;
   padding-bottom: 0px;
 }
-.border_style{
+.border_style {
   border-width: 4px;
   border-style: solid;
-  border-image: linear-gradient(to bottom right, #387ADF, #50C4ED, #9BDAF0) 1;
+  border-image: linear-gradient(to bottom right, #387adf, #50c4ed, #9bdaf0) 1;
 }
 .img_value {
   width: 500px;
   height: 600px;
-  border-width: 4px ;
-  border-style: solid;
 }
 
 .text {
   width: 400px;
+}
+/* section partenaire */
+.box-1 {
+  width: 280px;
+  height: 189px;
+}
+.box-1 img {
+  width: 290px;
+  height: 182px;
 }
 
 /*----------Desktop ----------*/
@@ -219,7 +215,7 @@ button {
 }
 
 /* -----Tablet--------- */
-@media only screen and (max-width: 769px) and (max-width: 765px) and (max-width: 1024px) {
+@media only screen and (max-width: 769px) and (max-width: 641px) and (max-width: 646px) and (max-width: 676px) and (max-width: 800px) and (max-width: 1024px) {
   .burger-icon span {
     display: block;
   }
@@ -228,7 +224,7 @@ button {
   }
   .img_value {
     width: 450px;
-    height: 250px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,10 +233,24 @@ button {
   .val {
     padding-bottom: 10px;
   }
+  .box-ptr {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .box-1{
+    width: 270px;
+    height: 170px;
+  }
 }
-.cc{
+
+/* fin media desktop */
+.cc {
   width: 33.3%;
   height: 300px;
+}
+.cc p {
+  font-size:13px;
+  padding-bottom: 5px;
 }
 /* ------Mobile--------- */
 @media only screen and (min-width: 362px) and (max-width: 639px) {
@@ -301,14 +311,40 @@ button {
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 10px;
     border-radius: 26px;
   }
   .firstTwoValues,
   .secondTwoValues {
     display: block;
   }
-  .c1{
+  .c1 {
     flex-wrap: wrap;
   }
-
+  .cc h3 {
+    font-size: 16px;
+  }
+  .cc p {
+    font-size: 55%;
+  }
+  .cc {
+    width: 45%;
+    height: 300px;
+  }
+  .cc img {
+    width: 50px;
+    height: 30px;
+    background-color: white;
+  }
+  .box-ptr {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .box-1{
+    width: 160px;
+    height: 89px;
+  }
+  .box-1 img{
+    padding-bottom: 90px;
+  }
 }
