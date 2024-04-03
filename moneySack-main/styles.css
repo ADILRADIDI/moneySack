@@ -178,13 +178,10 @@ button {
   padding-top: 20px;
   padding-bottom: 0px;
 }
-.cc {
-  width: 250px;
-  height: 300px;
-}
+
 .img_value {
   width: 500px;
-  height: 575px;
+  height: 600px;
 }
 .text {
   width: 400px;
@@ -193,6 +190,9 @@ button {
 @media only screen and (min-width: 1025px) {
   .burger-icon span {
     display: none;
+  }
+  .val {
+    padding-bottom: 0px;
   }
 }
 
@@ -203,6 +203,17 @@ button {
   }
   .links {
     display: none;
+  }
+  .img_value {
+    width: 450px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .val {
+    padding-bottom: 10px;
   }
 }
 
@@ -256,5 +267,19 @@ button {
   }
   .container3 img {
     width: 420px;
+  }
+  .img_value {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 26px;
+  }
+  .firstTwoValues,
+  .secondTwoValues {
+    display: block;
   }
 }
