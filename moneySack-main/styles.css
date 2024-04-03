@@ -1,3 +1,5 @@
+
+
 :root {
   --black: #111;
   --white: #ffffff;
@@ -18,7 +20,7 @@ body {
 /*style header*/
 .links {
   margin-top: 1rem;
-}
+ }
 .links a {
   color: white;
   padding-left: 20px;
@@ -26,12 +28,13 @@ body {
   font-size: 1rem;
   font-weight: bold;
 }
-.links a:hover {
-  color: var(--orange-);
-}
+
+
 .button_nav {
   margin-top: 1rem;
 }
+
+
 .button_nav button {
   width: 251px;
   height: 52px;
@@ -43,10 +46,14 @@ body {
   border: 0px;
   position: relative;
   bottom: 15px;
-}
+  
+  }
+ 
 button {
   background-image: linear-gradient(#397edf, #4ec0eb);
-}
+     }
+ 
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -119,7 +126,7 @@ button {
   text-align: center;
   padding-bottom: 6rem;
 }
-.button-nav button {
+.button-nav .button {
   width: 220px;
   height: 52px;
   border-radius: 16px;
@@ -127,6 +134,7 @@ button {
   font-weight: bold;
   font-size: 1rem;
   color: white;
+  background-image: linear-gradient(#397edf, #4ec0eb);
   border: 0px;
   bottom: 15px;
   margin-top: 30px;
@@ -136,6 +144,12 @@ button {
   margin: 0 auto;
   margin-bottom: 3rem;
 }
+/* .button_nav .button {
+  
+  background-image: linear-gradient(#397edf, #4ec0eb);
+} */
+
+
 .button-nav {
   text-decoration: none;
 }
@@ -178,14 +192,22 @@ button {
   padding-top: 20px;
   padding-bottom: 0px;
 }
-
+.border_style{
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom right, #387ADF, #50C4ED, #9BDAF0) 1;
+}
 .img_value {
   width: 500px;
   height: 600px;
+  border-width: 4px ;
+  border-style: solid;
 }
+
 .text {
   width: 400px;
 }
+
 /*----------Desktop ----------*/
 @media only screen and (min-width: 1025px) {
   .burger-icon span {
@@ -216,9 +238,12 @@ button {
     padding-bottom: 10px;
   }
 }
-
+.cc{
+  width: 33.3%;
+  height: 300px;
+}
 /* ------Mobile--------- */
-@media only screen and (min-width: 362px) and (max-width: 647px) {
+@media only screen and (min-width: 362px) and (max-width: 639px) {
   .burger-icon span {
     display: block;
   }
@@ -282,4 +307,8 @@ button {
   .secondTwoValues {
     display: block;
   }
+  .c1{
+    flex-wrap: wrap;
+  }
+
 }
