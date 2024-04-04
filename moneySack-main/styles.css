@@ -11,7 +11,7 @@
   --gradiant-blue: linear-gradient(#397edf, #4ec0eb);
 }
 body {
-  background-color: #191d88;
+  background-color: var(--background);
   margin: 0 auto;
   padding: 0px;
 }
@@ -20,7 +20,7 @@ body {
   margin-top: 1rem;
 }
 .links a {
-  color: white;
+  color: var(--white);
   padding-left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -38,7 +38,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  color: white;
+  color: var(--white);
   border: 0px;
   position: relative;
   bottom: 15px;
@@ -65,7 +65,7 @@ button {
 }
 .menu span,
 .menu2 span {
-  background-color: black;
+  background-color: var(--black);
   width: 100%;
   height: 0.5rem;
   border-radius: 5px;
@@ -97,7 +97,7 @@ button {
   width: 90%;
   height: 850px;
   border-radius: 41px;
-  background-color: orange;
+  background-color: var(--orange-);
   position: relative;
 }
 /*heading in main*/
@@ -127,7 +127,7 @@ button {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  color: white;
+  color: var(--white);
   background-image: linear-gradient(#397edf, #4ec0eb);
   border: 0px;
   bottom: 15px;
@@ -152,7 +152,7 @@ button {
 }
 /*styling about section*/
 .container3 {
-  color: white;
+  color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
@@ -184,13 +184,13 @@ button {
 .border_style {
   border-width: 4px;
   border-style: solid;
+  border-radius: 40px;
   border-image: linear-gradient(to bottom right, #387adf, #50c4ed, #9bdaf0) 1;
 }
 .img_value {
   width: 500px;
   height: 600px;
 }
-
 .text {
   width: 400px;
 }
@@ -203,8 +203,17 @@ button {
   width: 290px;
   height: 182px;
 }
+.BOX{
+  /* w-391 h-483 */
+  width: 391px;
+  height: 420px;
+}
 
-/*----------Desktop ----------*/
+
+
+    /*------------------------------------*/
+  /*----------Desktop ------------------*/
+/*------------------------------------*/
 @media only screen and (min-width: 1025px) {
   .burger-icon span {
     display: none;
@@ -213,9 +222,10 @@ button {
     padding-bottom: 0px;
   }
 }
-
 /* -----Tablet--------- */
-@media only screen and (max-width: 769px) and (max-width: 641px) and (max-width: 646px) and (max-width: 676px) and (max-width: 800px) and (max-width: 1024px) {
+@media only screen and (max-width: 769px) and (max-width: 642px) 
+and (max-width: 646px) and (max-width: 676px) and (max-width: 800px) 
+and (max-width: 1024px) {
   .burger-icon span {
     display: block;
   }
@@ -241,6 +251,21 @@ button {
     width: 270px;
     height: 170px;
   }
+  .container-tech {
+    flex-wrap: wrap;
+  }
+  .BOX{
+    width: 380px;
+    height: 400px;
+  }
+}
+.container-tech {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0 10px;
+  gap: 10px;
 }
 
 /* fin media desktop */
@@ -253,7 +278,7 @@ button {
   padding-bottom: 5px;
 }
 /* ------Mobile--------- */
-@media only screen and (min-width: 362px) and (max-width: 639px) {
+@media only screen and (min-width: 362px) and (max-width: 646px) {
   .burger-icon span {
     display: block;
   }
@@ -286,7 +311,7 @@ button {
   }
   .About,
   .About .container3 {
-    padding-left: 40px;
+    /* padding-left: 40px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,5 +371,9 @@ button {
   }
   .box-1 img{
     padding-bottom: 90px;
+  }
+  .BOX{
+    flex-wrap: wrap;
+    width: 80%;
   }
 }
