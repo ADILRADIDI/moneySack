@@ -9,11 +9,14 @@
   --brown: #331f07;
   --light-brown: #82601f;
   --gradiant-blue: linear-gradient(#397edf, #4ec0eb);
+  --gradiant-orange: linear-gradient(#f8cb8d, #f6a432, #ff9b10, #ce7902);
+  --gradiant-darkBlue: linear-gradient(#191d88, #060722, #090a2d, #191d88);
 }
 body {
   background-color: var(--background);
   margin: 0 auto;
   padding: 0px;
+  overflow-x: hidden;
 }
 /*style header*/
 .links {
@@ -97,7 +100,7 @@ button {
   width: 90%;
   height: 850px;
   border-radius: 41px;
-  background-color: var(--orange-);
+  background-image: var(--gradiant-orange);
   position: relative;
 }
 /*heading in main*/
@@ -120,28 +123,7 @@ button {
   text-align: center;
   padding-bottom: 6rem;
 }
-.button-nav .button {
-  width: 220px;
-  height: 52px;
-  border-radius: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  color: var(--white);
-  background-image: linear-gradient(#397edf, #4ec0eb);
-  border: 0px;
-  bottom: 15px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
 
-.button-nav {
-  text-decoration: none;
-}
 .container2 img {
   width: 75%;
   height: 60%;
@@ -184,7 +166,6 @@ button {
 .border_style {
   border-width: 4px;
   border-style: solid;
-  border-radius: 40px;
   border-image: linear-gradient(to bottom right, #387adf, #50c4ed, #9bdaf0) 1;
 }
 .img_value {
@@ -203,16 +184,28 @@ button {
   width: 290px;
   height: 182px;
 }
-.BOX{
+.BOX {
   /* w-391 h-483 */
   width: 391px;
   height: 420px;
 }
 
+.backg_img {
+  background-image: url(img/before\ footer.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backg_table {
+  background-image:var(--gradiant-darkBlue);
+}
 
 
-    /*------------------------------------*/
-  /*----------Desktop ------------------*/
+
+
+/*------------------------------------*/
+/*----------Desktop ------------------*/
 /*------------------------------------*/
 @media only screen and (min-width: 1025px) {
   .burger-icon span {
@@ -223,9 +216,7 @@ button {
   }
 }
 /* -----Tablet--------- */
-@media only screen and (max-width: 769px) and (max-width: 642px) 
-and (max-width: 646px) and (max-width: 676px) and (max-width: 800px) 
-and (max-width: 1024px) {
+@media only screen and (max-width: 769px) and (max-width: 642px) and (max-width: 646px) and (max-width: 676px) and (max-width: 800px) and (max-width: 1024px) {
   .burger-icon span {
     display: block;
   }
@@ -247,14 +238,14 @@ and (max-width: 1024px) {
     flex-wrap: wrap;
     display: flex;
   }
-  .box-1{
+  .box-1 {
     width: 270px;
     height: 170px;
   }
   .container-tech {
     flex-wrap: wrap;
   }
-  .BOX{
+  .BOX {
     width: 380px;
     height: 400px;
   }
@@ -274,7 +265,7 @@ and (max-width: 1024px) {
   height: 300px;
 }
 .cc p {
-  font-size:13px;
+  font-size: 13px;
   padding-bottom: 5px;
 }
 /* ------Mobile--------- */
@@ -341,7 +332,7 @@ and (max-width: 1024px) {
   }
   .firstTwoValues,
   .secondTwoValues {
-    display: block;
+    display: inline-block;
   }
   .c1 {
     flex-wrap: wrap;
@@ -357,23 +348,28 @@ and (max-width: 1024px) {
     height: 300px;
   }
   .cc img {
-    width: 50px;
-    height: 30px;
-    background-color: white;
+    width: 150px;
+    height: 70px;
   }
   .box-ptr {
     flex-wrap: wrap;
     display: flex;
   }
-  .box-1{
+  .box-1 {
     width: 160px;
     height: 89px;
   }
-  .box-1 img{
+  .box-1 img {
     padding-bottom: 90px;
   }
-  .BOX{
+  .BOX {
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
+  }
+  .BOX p {
+    font-size: 16px;
+  }
+  .hero {
+    margin-top: 10px;
   }
 }

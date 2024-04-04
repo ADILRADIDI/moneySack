@@ -8,6 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -22,8 +23,12 @@
           <a href="#">Our Partners </a>
           <a href="#">Card & Payment</a>
         </div>
-        <div class="button-nav button">
-          <a class="button-nav button" href="#"> Feel free to Contact us </a>
+        <div>
+          <a href="#" class="mt-auto inline-block rounded-full border 
+          border-sky-500 px-10 py-3 text-sm font-medium text-cyan-400 hover:bg-sky-500 
+          hover:text-white focus:outline-none focus:ring active:bg-sky-500" href="#">
+            Feel free to Contact us
+          </a>
         </div>
         <!----this menu hidden in desktop only---->
         <a href="#" id="openBtn">
@@ -45,11 +50,11 @@
           Our major i am is facilitating both national and international
           payments
         </p>
-        <div class="button-nav button">
-          <a id="btn_hero" href="#" class="button-nav button">
+        <div class="flex flex-col items-center">
+          <a id="btn_hero" href="#" class=" mt-8  inline-block rounded-full border border-sky-500 px-12 py-3 text-sm font-medium text-sky-700 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring active:bg-sky-500">
             Know more about us
           </a>
-        </div>
+     </div>
 
         <img src="img/desktop_card.png" alt="contact us" />
       </div>
@@ -194,10 +199,10 @@
             </div>
           </div>
         </div>
-        <div class="button-nav button">
-          <a id="btn_hero" href="#" class="button-nav button">
-            Know more about us
-          </a>
+        <div class="flex flex-col items-center">
+          <a id="btn_hero" href="#" class=" mt-8  inline-block rounded-full border border-sky-500 px-12 py-3 text-sm font-medium text-cyan-400 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring active:bg-sky-500">
+                  Know more about us
+                </a>
         </div>
       </div>
     </section>
@@ -254,7 +259,7 @@
 
         <div class="BOX bg-blue-400 bg-opacity-88 text-white text-center px-10 py-10 rounded-2xl">
           <img src="img/tech1.svg" alt="tech1" class="w-20 h-20 m-auto" />
-          <p class="pt-12 text-xl lg:text-xl md:text-base sm:text-base">
+          <p class="pt-12 text-xl lg:text-xl md:text-base sm:text-md">
             MoneySack has implemented advanced biometric identity verification
             and end-to-end encryption to secure your data and prevent fraud.
           </p>
@@ -263,7 +268,7 @@
           class="BOX bg-blue-400 bg-opacity-88 text-white text-center px-10 py-10 rounded-2xl"
         >
           <img src="img/tech2.svg" alt="tech2" class="w-20 h-20 m-auto" />
-          <p class="pt-12 text-xl lg:text-xl md:text-base sm:text-sm">
+          <p class="pt-12 text-xl lg:text-xl md:text-base sm:text-md">
             MoneySack employs industry-tested and approved solutions like
             multi-factor authentication and 3DS Secure to protect your account
             and card.
@@ -274,13 +279,167 @@
           class="BOX bg-blue-400 bg-opacity-88 text-white text-center px-10 py-10 rounded-2xl"
         >
           <img src="img/tech3.svg" alt="tech3" class="w-20 h-20 m-auto" />
-          <p class="pt-12 text-xl lg:text-xl md:text-base sm:text-base">
+          <p class="pt-12 text-xl lg:text-xl md:text-base sm:text-md">
             Protecting your personal data is a priority for MoneySack We
-            guarantee the security and confidentiality of your information in
-            accordance with GDPR.
+            guarantee the security and confidentiality.
           </p>
         </div>
       </div>
     </section>
-  </body>
+
+    <!-- ------------------------------------------->
+    <!-- section  pricing-------------------------->
+    <!-------------------------------------------->
+    <div class="pricing">
+      <div class="headings">
+          <h1 class="heading_pricing text-white text-center font-bold text-2xl">
+              Cards & Payments
+          </h1>
+          <h3 class="heading_pricing text-white italic text-center font-bold text-xl">
+              Select a pricing plan
+          </h3>
+      </div>
+        
+      <div class="table inline-block flex flex-row  roundedbackg_table">
+          <div class="features">
+            <h2> features </h2>
+            <div class="Cards">
+              <h2> Accounts </h2>  
+              <h4> Creation of a RIB </h4>           
+            </div>
+            
+            <div class="Cards">
+              <h2> Cards </h2>
+              <h4> Debit Card </h4>
+              <h4> Virtual Card  </h4>
+             
+            </div>
+            
+            <div class="Payments">
+              <h2> Payments </h2>
+            </div>
+            <div class="Transfers">
+              <h2> Transfers </h2>
+            </div>
+            
+            
+
+          </div>
+          <div class="pack_pro w-72 h-122	 bg-yellow-300 rounded-2xl">            
+            <h5 class="font-bold text-lg mx-8">PRO</h5>
+            <!-- icon cards and price -->
+            <div class="card&price flex items-center m-auto justify-center gap-5">
+              <img src="img/card_pro.svg" alt="card pro" class="w-100 h-50 inline-block">
+              <h3 class="inline-block font-bold">29.99$/month</h3>
+            </div>
+            <a id="btn_hero" href="#" class="inline-block 
+            rounded-full border border-sky-500 px-5 
+            py-3 text-md font-medium text-cyan-400 
+            hover:bg-sky-500 hover:text-white focus:outline-none 
+            focus:ring active:bg-sky-500 w-52 h-14	 
+            my-3 flex items-center m-auto justify-center">
+                  Feel free to contact us
+            </a>
+            <div class="account items-center text-center justify-center m-0 mb-10 font-bold"><p>free</p></div>
+            <div class="cards items-center text-center justify-center m-0 mb-10 font-bold">
+              <p>free</p>
+              <p>free</p>
+            </div>
+            <div class="payment items-center text-center justify-center m-0 mb-10 font-bold">
+              <p>free</p>
+              <p>free</p>
+            </div>
+            <div class="Transfers items-center text-center justify-center m-0 mb-10 font-bold">
+              <p>free</p>
+              <p>free</p>
+            </div>
+          </div>
+
+
+
+
+          <div class="pack_regular">
+
+          </div>
+          <div class="pack_free">
+
+          </div>
+          </div>
+        </div>
+
+<!------------------------------------------------------------------------>
+<!-------------------------- Contact info---------------------------------->
+<!-------------------------- ------------------------------------------------>
+<form class="flex flex-col mx-auto px-28 items-center justify-center mt-10 mb-20">
+  <div class="headcontainer text-white">
+   <div class=" text-white">
+     <h1 class="text-3xl font-extrabold text-white sm:text-5xl mb-8"> Contact Information</h1>
+     <p class="mb-5"> Please feel free to contact us  for any request.  </p>
+   </div>
+   <div class="inputcontainer flex flex-col">
+     <div class="flex-wrap mb-8"> 
+   <label for="fullname">Full name </label>
+   <input type="text" id="fullname" name="fullname" class="rounded-sm text-white bg-sky-400 bg-opacity-50" placeholder="fullName">
+   <label for="email">Email </label>
+   <input type="text" id="email" name="email" class="rounded-sm  text-white bg-sky-400 bg-opacity-50" placeholder="email"> 
+   </div>
+   <div class="relative">
+     <label for="message" class=" text-white">Message</label>
+     <textarea id="message" name="message" class="w-full bg-sky-400 bg-opacity-50 rounded border-0"></textarea>
+   </div>
+ 
+   <div class="flex mx-auto mt-8 inline-block rounded-full border border-sky-500 px-12 py-3 text-sm font-medium text-cyan-400 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring active:bg-sky-500">
+   <input type="submit" value="Submit">
+   </div>
+ </div>
+ </div>
+ </form>
+ 
+ 
+ 
+
+ <!-------------------------------------------------------------------->
+ <!-------------------------- footer ---------------------------------->
+ <!-------------------------- ------- ---------------------------------->
+ <footer class="backg_img ">
+   <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+     <div class="text-center ">
+       <h2 class="text-3xl font-extrabold text-white sm:text-5xl">Explore moneysack</h2>
+       <p class="mx-auto mt-4 max-w-sm text-white align-center">
+         The financial platform dedicated to the Universal users,living Morocco, USA and UAE, combining advanced technology, family connection and stimulating development in New York.
+       </p>
+       <a
+         href="#"
+         class="mt-8 inline-block rounded-full border border-sky-500 px-12 py-3 text-sm font-medium text-cyan-400 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring active:bg-sky-500"
+       >
+         Feel free to contact us
+       </a>
+     </div>
+     <div
+       class="mt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
+       <ul class="flex flex-wrap justify-center m-gap-3 text-xs lg:justify-end">
+         <li>
+           <a href="logo"> <img src="img/logoNew.png" alt="logo" class="object-right-top"></a>
+         </li>
+         <ol class="flex flex-shrink-0 items-center justify-center mx-64 gap-12 sm:text-xs">
+           <li>
+             <a href="#" class="text-white transition hover:opacity-75"> Terms & Conditions </a>
+           </li>
+           <li>
+             <a href="#" class="text-white transition hover:opacity-75"> Legal notice </a>
+           </li>
+           <li>
+             <a href="#" class="text-white transition hover:opacity-75"> Cookies </a>
+           </li>
+         </ol>
+         <li> 
+           <a href="#" class="text-gray-500 flex-row-reverse items-center transition hover:opacity-75"> Copyright © 2024 - moneysack </a>
+         </li>
+       </ul>   
+         </li>
+       </ul>
+     </div>
+   </div>
+ </footer>
+</body>
 </html>
