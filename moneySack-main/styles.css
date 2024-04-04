@@ -11,6 +11,9 @@
   --gradiant-blue: linear-gradient(#397edf, #4ec0eb);
   --gradiant-orange: linear-gradient(#f8cb8d, #f6a432, #ff9b10, #ce7902);
   --gradiant-darkBlue: linear-gradient(#191d88, #060722, #090a2d, #191d88);
+  --gradient-regular-pack:linear-gradient(#1E4787,#070A33);
+  --gradient-free-pack:linear-gradient(#331F07,#9F7118);
+  --gradient-pro-pack:linear-gradient(#72A6F6,#1C488C);
 }
 body {
   background-color: var(--background);
@@ -189,21 +192,45 @@ button {
   width: 391px;
   height: 420px;
 }
-
+/*background image for footer section*/
 .backg_img {
   background-image: url(img/before\ footer.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/*background color pricing section*/
 .backg_table {
   background-image:var(--gradiant-darkBlue);
 }
 
+.bg_pack_pro{
+  background-image:var(--gradient-pro-pack);
+}
+.bg_pack_regular{
+  background-image:var(--gradient-regular-pack);
+}
+.bg_pack_free{
+background-image: var(--gradient-free-pack);
+} 
+.container-tech {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0 10px;
+  gap: 10px;
+}
 
-
-
+/* fin media desktop */
+.cc {
+  width: 33.3%;
+  height: 300px;
+}
+.cc p {
+  font-size: 13px;
+  padding-bottom: 5px;
+}
 /*------------------------------------*/
 /*----------Desktop ------------------*/
 /*------------------------------------*/
@@ -215,8 +242,9 @@ button {
     padding-bottom: 0px;
   }
 }
+
 /* -----Tablet--------- */
-@media only screen and (max-width: 769px) and (max-width: 642px) and (max-width: 646px) and (max-width: 676px) and (max-width: 800px) and (max-width: 1024px) {
+@media only screen and (max-width: 769px){
   .burger-icon span {
     display: block;
   }
@@ -249,30 +277,20 @@ button {
     width: 380px;
     height: 400px;
   }
-}
-.container-tech {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  padding: 0 10px;
-  gap: 10px;
-}
+  .featuress{
+    display: none;
+  }
+  }
 
-/* fin media desktop */
-.cc {
-  width: 33.3%;
-  height: 300px;
-}
-.cc p {
-  font-size: 13px;
-  padding-bottom: 5px;
-}
+
 /* ------Mobile--------- */
-@media only screen and (min-width: 362px) and (max-width: 646px) {
+@media only screen and (min-width: 362px) and (max-width: 767px) {
   .burger-icon span {
     display: block;
   }
+   .three_pack{
+    display: block;
+   } 
   .links {
     display: none;
   }
