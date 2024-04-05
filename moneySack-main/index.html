@@ -8,37 +8,53 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css" />
+  <script src="main.js"></script>
 </head>
 
 <body>
-  <nav class="">
-    <div class="container">
-      <div class="logo"><img src="img/logo.png" alt="" /></div>
-      <div class="links">
-        <a href="#">Home</a>
-        <a href="#about">About us</a>
-        <a href="#">Advantages</a>
-        <a href="#">Our Values </a>
-        <a href="#">Our Partners </a>
-        <a href="#">Card & Payment</a>
+  <!------------------------------Nav Section---------------------------------->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <img src="img/logo.png" alt="" />
+        </div>
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#about">About us</a>
+          <a href="#">Advantages</a>
+          <a href="#">Our Values </a>
+          <a href="#">Our Partners </a>
+          <a href="#">Card & Payment</a>
+        </div>
+        <div>
+          <a href="#" class="btn_navbar mt-auto inline-block rounded-full border 
+            border-sky-500 px-10 py-3 text-sm font-medium text-cyan-400 hover:bg-sky-500 
+            hover:text-white focus:outline-none focus:ring active:bg-sky-500" href="#">
+            Feel free to Contact us
+          </a>
+          
+        </div>
+        <input class="checkbox" type="checkbox" id="menu-toggle">
+              <label for="menu-toggle" class="hamburger-icon">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </label> 
+           <div class="container-hamburger">
+              <ul class="menu" id="menu">
+                <li class="a1"><a href="#about">About us</a></li>
+                <li class="a1"><a href="#">Advantages</a></li>
+                <li class="a1"><a href="#">Our Values</a></li>
+                <li class="a1"><a href="#">Our Partners</a></li>
+                <li class="a1"><a href="#">Card & Payment</a></li>
+              </ul>
+            </div>
+      
       </div>
-      <div>
-        <a href="#" class="mt-auto inline-block rounded-full border 
-          border-sky-500 px-10 py-3 text-sm font-medium text-cyan-400 hover:bg-sky-500 
-          hover:text-white focus:outline-none focus:ring active:bg-sky-500" href="#">
-          Feel free to Contact us
-        </a>
-      </div>
-      <!----this menu hidden in desktop only---->
-      <a href="#" id="openBtn">
-        <span class="burger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </a>
-    </div>
-  </nav>
+    </nav>
+  </body>
+  
+<!----------------------------Section Hero----------------------------->
   <main class="hero">
     <div class="container2">
       <h1>
@@ -70,7 +86,7 @@
       <img src="img/map with flags.svg" alt="map" />
     </div>
   </section>
-  <!--advantages-->
+<!-------------------------------Sectionadvantages------------------------>
   <section id="MoneySack_Advantages">
     <div class="h1_advantage">
       <h1 class="text-white font-bold text-center py-5 text-2xl">
@@ -127,7 +143,7 @@
       </div>
     </div>
   </section>
-  <!--our values-->
+  <!-----------------------------Section our values---------------------------------------->
   <section class="our_values">
     <div class="container_all">
       <div class="heading">
@@ -187,7 +203,7 @@
       </div>
     </div>
   </section>
-  <!-- partenaire -->
+  <!------------------------------------Section Partners -------------------------->
   <section class="part pb-48">
     <div>
       <h1 class="text-white text-center font-bold text-2xl pt-10 lg:pb-20">
@@ -217,7 +233,7 @@
       </div>
     </div>
   </section>
-  <!--section our technologies  -->
+  <!----------------------------section our technologies  -------------------------->
   <section class="box-tech">
     <div class="heading-tech">
       <h1 class=" text-white text-center font-bold text-2xl lg:pb-20">
@@ -254,9 +270,7 @@
     </div>
   </section>
 
-  <!-- ------------------------------------------->
-  <!-- section  pricing-------------------------->
-  <!-------------------------------------------->
+  <!---------------------------------- section  pricing----------------------------->
   <div class="pricing">
     <div class="head_pricing">
       <h1 class="text-white text-center font-bold text-2xl mt-16">
@@ -482,11 +496,8 @@
 
 
     </div>
-  </div>
-
-  <!------------------------------------------------------------------------>
-  <!-------------------------- Contact info---------------------------------->
-  <!-------------------------- ------------------------------------------------>
+  </div> 
+<!---------------------------------- Contact info--------------------------------------->
   <form class="flex flex-col mx-auto px-28 items-center justify-center mt-10 mb-20">
     <div class="headcontainer text-white">
       <div class=" text-white">
@@ -515,13 +526,8 @@
     </div>
   </form>
 
-
-
-
-  <!-------------------------------------------------------------------->
-  <!-------------------------- footer ---------------------------------->
-  <!-------------------------- ------- ---------------------------------->
-  <footer class="backg_img ">
+<!-------------------------------------- footer --------------------------------------------->
+   <footer class="backg_img ">
     <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
       <div class="text-center ">
         <h2 class="text-3xl font-extrabold text-white sm:text-5xl">Explore moneysack</h2>
