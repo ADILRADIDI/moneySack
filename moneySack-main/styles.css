@@ -11,9 +11,9 @@
   --gradiant-blue: linear-gradient(#397edf, #4ec0eb);
   --gradiant-orange: linear-gradient(#f8cb8d, #f6a432, #ff9b10, #ce7902);
   --gradiant-darkBlue: linear-gradient(#191d88, #060722, #090a2d, #191d88);
-  --gradient-regular-pack:linear-gradient(#1E4787,#070A33);
-  --gradient-free-pack:linear-gradient(#331F07,#9F7118);
-  --gradient-pro-pack:linear-gradient(#72A6F6,#1C488C);
+  --gradient-regular-pack: linear-gradient(#1e4787, #070a33);
+  --gradient-free-pack: linear-gradient(#331f07, #9f7118);
+  --gradient-pro-pack: linear-gradient(#72a6f6, #1c488c);
 }
 body {
   background-color: var(--background);
@@ -201,18 +201,18 @@ button {
 }
 /*background color pricing section*/
 .backg_table {
-  background-image:var(--gradiant-darkBlue);
+  background-image: var(--gradiant-darkBlue);
 }
 
-.bg_pack_pro{
-  background-image:var(--gradient-pro-pack);
+.bg_pack_pro {
+  background-image: var(--gradient-pro-pack);
 }
-.bg_pack_regular{
-  background-image:var(--gradient-regular-pack);
+.bg_pack_regular {
+  background-image: var(--gradient-regular-pack);
 }
-.bg_pack_free{
-background-image: var(--gradient-free-pack);
-} 
+.bg_pack_free {
+  background-image: var(--gradient-free-pack);
+}
 .container-tech {
   display: flex;
   justify-content: space-around;
@@ -241,15 +241,19 @@ background-image: var(--gradient-free-pack);
   .val {
     padding-bottom: 0px;
   }
+  .backg_table {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 /* -----Tablet--------- */
-@media only screen and (max-width: 769px){
-  .burger-icon span {
-    display: block;
-  }
+@media only screen and (max-width: 769px) {
   .links {
     display: none;
+  }
+  .burger-icon span {
+    display: block;
   }
   .img_value {
     width: 450px;
@@ -277,20 +281,38 @@ background-image: var(--gradient-free-pack);
     width: 380px;
     height: 400px;
   }
-  .featuress{
+  .featuress {
     display: none;
   }
+  .text_hid {
+    display: block;
+  }
+  .three_pack {
+    display: block;
+    padding-bottom: 30px;
+  }
+  /*all pack pricing*/
+  .pack {
+    width: 550px;
+    height: 350px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
+  .left_pack {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+}
 
 /* ------Mobile--------- */
-@media only screen and (min-width: 362px) and (max-width: 767px) {
+@media (min-width: 362px) and (max-width: 769px) {
   .burger-icon span {
     display: block;
   }
-   .three_pack{
-    display: block;
-   } 
   .links {
     display: none;
   }
@@ -389,5 +411,26 @@ background-image: var(--gradient-free-pack);
   }
   .hero {
     margin-top: 10px;
+  }
+  .three_pack {
+    display: block;
+  }
+  /*all pack pricing*/
+  .pack {
+    width: 550px;
+    height: 350px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .left_pack {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .pack_pro,
+  .pack_regular {
+    margin-bottom: 50px;
   }
 }
