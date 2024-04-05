@@ -9,6 +9,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css" />
   <script src="main.js"></script>
+  <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -19,12 +21,12 @@
           <img src="img/logo.png" alt="" />
         </div>
         <div class="links">
-          <a href="#">Home</a>
+          <a href="#main">Home</a>
           <a href="#about">About us</a>
-          <a href="#">Advantages</a>
-          <a href="#">Our Values </a>
-          <a href="#">Our Partners </a>
-          <a href="#">Card & Payment</a>
+          <a href="#MoneySack_Advantages">Advantages</a>
+          <a href="#value">Our Values </a>
+          <a href="#Partners">Our Partners </a>
+          <a href="#Payment">Card & Payment</a>
         </div>
         <div>
           <a href="#" class="btn_navbar mt-auto inline-block rounded-full border 
@@ -43,10 +45,10 @@
            <div class="container-hamburger">
               <ul class="menu" id="menu">
                 <li class="a1"><a href="#about">About us</a></li>
-                <li class="a1"><a href="#">Advantages</a></li>
-                <li class="a1"><a href="#">Our Values</a></li>
-                <li class="a1"><a href="#">Our Partners</a></li>
-                <li class="a1"><a href="#">Card & Payment</a></li>
+                <li class="a1"><a href="#MoneySack_Advantages">Advantages</a></li>
+                <li class="a1"><a href="#value">Our Values</a></li>
+                <li class="a1"><a href="#Partners">Our Partners</a></li>
+                <li class="a1"><a href="#Payment">Card & Payment</a></li>
               </ul>
             </div>
       
@@ -55,7 +57,7 @@
   </body>
   
 <!----------------------------Section Hero----------------------------->
-  <main class="hero">
+  <main class="hero" id="main">
     <div class="container2">
       <h1>
         MoneySack Bank
@@ -144,7 +146,7 @@
     </div>
   </section>
   <!-----------------------------Section our values---------------------------------------->
-  <section class="our_values">
+  <section class="our_values" id="value">
     <div class="container_all">
       <div class="heading">
         <h1 class="val text-white text-center pt-5 font-bold text-2xl mt-20 lg:pb-20">
@@ -204,7 +206,7 @@
     </div>
   </section>
   <!------------------------------------Section Partners -------------------------->
-  <section class="part pb-48">
+  <section class="part pb-48" id="Partners">
     <div>
       <h1 class="text-white text-center font-bold text-2xl pt-10 lg:pb-20">
         Our partners
@@ -271,7 +273,7 @@
   </section>
 
   <!---------------------------------- section  pricing----------------------------->
-  <div class="pricing">
+  <div class="pricing" >
     <div class="head_pricing">
       <h1 class="text-white text-center font-bold text-2xl mt-16">
         Cards & Payments
@@ -281,7 +283,7 @@
       </h3>
     </div>
 
-    <div class="backg_table flex justify-center
+    <div id="Payment" class="backg_table  flex justify-center
        items-center mt-8
         justify-around grow-0">
 
@@ -316,7 +318,7 @@
       <!-- ------------------------- -->
       <div class="three_pack flex gap-10 xl:flex lg:flex md:flex sm:block">
 
-        <div class="pack pack_pro w-72  h-122 lg:w-64 md:w-44 bg_pack_pro rounded-2xl ">
+        <div class="pack pack_pro w-72 h-122 lg:w-64 bg_pack_pro rounded-2xl ">
           <h5 class="font-bold text-lg mx-8">PRO</h5>
           <!-- icon cards and price -->
           <div class="card&price flex items-center m-auto justify-center gap-5">
@@ -333,7 +335,7 @@
           </a>
           <div class="left_pack">
             <div class="account items-center text-white flex gap-5 text-center justify-center m-0 mb-20 font-bold">
-            <p class="hidden md:hidden sm:block">Creation of a RIB</p>
+            <p class="hidden md:hidden sm:block">Creation a RIB</p>
             <p>free</p>
           </div>
           <div class="cards items-center text-white  text-center justify-center m-0 mb-20 font-bold">
@@ -374,7 +376,7 @@
         </div>
         <!-- regular---------------- -->
         <!-- ------------------------- -->
-        <div class="pack pack_regular w-72 h-122 lg:w-64 md:w-44	bg_pack_regular rounded-2xl">
+        <div class="pack pack_regular w-72 h-122 lg:w-64 bg_pack_regular rounded-2xl">
           <h5 class="font-bold text-lg mx-8">Regular</h5>
           <!-- icon cards and price -->
           <div class="card&price flex items-center m-auto justify-center gap-5">
@@ -432,7 +434,7 @@
         </div>
         <!--pack free-------------- -->
         <!--------------------------- -->
-        <div class="pack pack_free w-72 h-122 lg:w-64 md:w-44 bg_pack_free rounded-2xl mr-10">
+        <div class="pack pack_free w-72 h-122 lg:w-64 bg_pack_free rounded-2xl">
           <h5 class="font-bold text-lg mx-8">FREE</h5>
           <!-- icon cards and price -->
           <div class="card&price flex items-center m-auto justify-center gap-5">
