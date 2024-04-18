@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>moneySack</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js"></script>
+  <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!------------------------------Nav Section---------------------------------->
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <img src="img/logo.png" alt="" />
+        </div>
+        <div class="links">
+          <a href="#main">Home</a>
+          <a href="#about">About us</a>
+          <a href="#MoneySack_Advantages">Advantages</a>
+          <a href="#value">Our Values </a>
+          <a href="#Partners">Our Partners </a>
+          <a href="#Payment">Card & Payment</a>
+        </div>
+        <div>
+          <a href="#" class="btn_navbar mt-auto inline-block rounded-full border 
+            border-sky-500 px-10 py-3 text-sm font-medium text-cyan-400 hover:bg-sky-500 
+            hover:text-white focus:outline-none focus:ring active:bg-sky-500" href="#">
+            Feel free to Contact us
+          </a>
+          
+        </div>
+        <input class="checkbox" type="checkbox" id="menu-toggle">
+              <label for="menu-toggle" class="hamburger-icon">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </label> 
+           <div class="container-hamburger">
+              <ul class="menu" id="menu">
+                <li class="a1"><a href="#about">About us</a></li>
+                <li class="a1"><a href="#MoneySack_Advantages">Advantages</a></li>
+                <li class="a1"><a href="#value">Our Values</a></li>
+                <li class="a1"><a href="#Partners">Our Partners</a></li>
+                <li class="a1"><a href="#Payment">Card & Payment</a></li>
+              </ul>
+            </div>
+      
+      </div>
+    </nav>
+  </body>
+  
+<!----------------------------Section Hero----------------------------->
+  <main class="hero" id="main">
+    <div class="container2">
+      <h1>
+        MoneySack Bank
+        <span id="span_h1">Your Wealth,Safely Sacked Away!</span>
+      </h1>
+      <p class="prg">
+        Our major i am is facilitating both national and international
+        payments
+      </p>
+      <div class="flex flex-col items-center">
+        <a id="btn_hero" href="#"
+          class=" mt-8  inline-block rounded-full border border-sky-500 px-12 py-3 text-sm font-medium text-sky-700 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring active:bg-sky-500">
+          Know more about us
+        </a>
+      </div>
+
+      <img src="img/desktop_card.png" alt="contact us" />
+    </div>
+  </main>
+  <section class="About" id="about">
+    <div class="container3">
+      <h1 class="text-white font-bold text-center py-5 text-2xl">About us</h1>
+      <p>
+        For 20 years, MoneySack has been ensuring safe transactions between
+        clients and their loved ones. We also help turn their project dreams
+        into reality.
+      </p>
+      <img src="img/map with flags.svg" alt="map" />
+    </div>
+  </section>
+<!-------------------------------Sectionadvantages------------------------>
+  <section id="MoneySack_Advantages">
+    <div class="h1_advantage">
+      <h1 class="text-white font-bold text-center py-5 text-2xl">
+        MoneySack Advantages
+      </h1>
+    </div>
+    <div
+      class="c1 flex flex-row text-center px-10 items-center justify-around gap-5 sm:flex-wrap md:flex-wrap lg:flex-nowrap">
+      <div
+        class="cc bg-blue-400 bg-opacity-88 flex flex-col items-center border_style transition duration-300 hover:bg-blue-500">
+        <h3 class="text-blue-900 font-bold text-center text-xl py-3 pb-8">
+          Global Presence
+        </h3>
+        <img src="img/global_adv.svg" alt="global" class="w-67 h-58 pb-10" />
+        <p class="text-blue-900 font-bold mx-4 text-base">
+          Our global branch network ensures convenient access to banking
+          services worldwide.
+        </p>
+      </div>
+
+      <div
+        class="cc bg-blue-400 bg-opacity-88 rounded-xl flex flex-col items-center border_style transition duration-300 hover:bg-blue-500">
+        <h3 class="text-blue-900 font-bold text-xl py-3 pb-10 text-xl">
+          Diversity of services & product
+        </h3>
+        <img src="img/diversity.svg" alt="diversity" class="w-67 h-58 pb-10" />
+        <p class="text-blue-900 font-bold mx-4 text-base">
+          Discover a diverse range of financial services and products tailored
+          to your needs.
+        </p>
+      </div>
+
+      <div
+        class="cc border_style bg-blue-400 bg-opacity-88 flex flex-col items-center  transition duration-300 hover:bg-blue-500">
+        <h3 class="text-blue-900 font-bold text-xl py-3 pb-8 text-xl">
+          Virtual and Physical Card
+        </h3>
+        <img src="img/visual.svg" alt="virtual" class="w-67 h-58 pb-10" />
+        <p class="text-blue-900 font-bold mx-4 text-base">
+          Enjoy the flexibility of both virtual and physical cards for your
+          transactions.
+        </p>
+      </div>
+
+      <div
+        class="cc bg-blue-400 bg-opacity-88 flex flex-col items-center border_style rounded-lg transition duration-300 hover:bg-blue-500">
+        <h3 class="text-blue-900 font-bold py-3 pb-8 text-xl">
+          Real-Time Settlement
+        </h3>
+        <img src="img/realtime.svg" alt="real-time" class="w-67 h-58 pb-10" />
+        <p class="text-blue-900 font-bold mx-4 text-base">
+          Experience seamless real-time settlement for your transactions.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-----------------------------Section our values---------------------------------------->
+  <section class="our_values" id="value">
+    <div class="container_all">
+      <div class="heading">
+        <h1 class="val text-white text-center pt-5 font-bold text-2xl mt-20 lg:pb-20">
+          Our values
+        </h1>
+      </div>
+      <div class="container5 flex flex-col lg:flex-row md:flex-row gap-10 justify-center items-center m-0">
+        <div class="image_value">
+          <img src="img/our_value.jpeg" alt="imageValue" class="img_value w-250 h-300 pl-0 lg:pl-30 rounded-xl" />
+        </div>
+        <div class="text pr-5 pl-0 lg:pr-30 pl-20">
+          <div class="firstTwoValues flex sm:flex md:block xs:flex gap-20 items-center justify-center pr-20">
+            <div>
+              <h2 class="text-white font-bold text-2xl pt-5 lg:pt-20">
+                Customer Satisfaction
+              </h2>
+              <p class="text-white pb-5 lg:pb-10 text-base pb-10">
+                Our priority is customer satisfaction, achieved through active
+                listening, innovation, and community engagement.
+              </p>
+            </div>
+            <div>
+              <h2 class="text-white font-bold text-2xl">Transparency</h2>
+              <p class="text-white pb-5 lg:pb-10 text-base pb-10">
+                Innovating to foster trust through clear communication,
+                ethical practices, and accountable financial services.
+              </p>
+            </div>
+          </div>
+
+          <div class="secondTwoValues flex sm:flex md:block xs:flex gap-20 items-center justify-center pr-20">
+            <div>
+              <h2 class="text-white font-bold text-2xl">Integrity</h2>
+              <p class="text-white pb-5 lg:pb-10 text-base pb-10">
+                At our core, integrity means being honest, transparent, and
+                ethical.
+              </p>
+            </div>
+            <div>
+              <h2 class="text-white font-bold text-2xl">
+                Innovation and Security
+              </h2>
+              <p class="text-white pb-5 lg:pb-10 text-base pb-10">
+                Pioneering solutions to safeguard your assets and trust,
+                defining the standard in banking excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <a id="btn_hero" href="#"
+          class=" mt-8  inline-block rounded-full border border-sky-500 px-12 py-3 text-sm font-medium text-cyan-400 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring active:bg-sky-500">
+          Know more about us
+        </a>
+      </div>
+    </div>
+  </section>
+  <!------------------------------------Section Partners -------------------------->
+  <section class="part pb-48" id="Partners">
+    <div>
+      <h1 class="text-white text-center font-bold text-2xl pt-10 lg:pb-20">
+        Our partners
+      </h1>
+    </div>
+
+    <div class="box-ptr flex flex-row justify-center pt-1 items-center m-0 gap-5 px-10">
+      <div class="first-two-box gap-5 flex xl:flex lg:flex md:block sm:block">
+        <div class="box-1 rounded-2xl bg-blue-400 bg-opacity-88 md:mb-5 sm:mb-5">
+          <img src="img/mastercard-svgrepo-com.svg" alt="" class="px-3" />
+        </div>
+
+        <div class="box-1 rounded-2xl bg-blue-400 bg-opacity-88">
+          <img src="img/paypal-1-svgrepo-com.svg" alt="" class="px-3" />
+        </div>
+      </div>
+
+      <div class="second-two-box gap-5 flex xl:flex lg:flex md:block sm:block">
+        <div class="box-1 rounded-2xl bg-blue-400 bg-opacity-88 md:mb-5 sm:mb-5">
+          <img src="img/visa-svgrepo-com.svg" alt="" class="px-3" />
+        </div>
+
+        <div class="box-1 rounded-2xl bg-blue-400 bg-opacity-88">
+          <img src="img/stripe-svgrepo-com.svg" alt="" class="px-3 py-0" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------------------------section our technologies  -------------------------->
+  <section class="box-tech">
+    <div class="heading-tech">
+      <h1 class=" text-white text-center font-bold text-2xl lg:pb-20">
+        Our technologies
+      </h1>
+    </div>
+    <!--container our technologies  -->
+    <div class="container-tech gap-10 flex justify-around items-center m-0 px-10 lg:flex-nowrap md:flex-nowrap
+         sm:flex-wrap">
+
+      <div class="BOX bg-blue-400 bg-opacity-88 text-white text-center px-10 py-10 rounded-2xl">
+        <img src="img/tech1.svg" alt="tech1" class="w-20 h-20 m-auto" />
+        <p class="pt-12 text-xl lg:text-xl md:text-base sm:text-md">
+          MoneySack has implemented advanced biometric identity verification
+          and end-to-end encryption to secure your data and prevent fraud.
+        </p>
+      </div>
+      <div class="BOX bg-blue-400 bg-opacity-88 text-white text-center px-10 py-10 rounded-2xl">
+        <img src="img/tech2.svg" alt="tech2" class="w-20 h-20 m-auto" />
+        <p class="pt-12 text-xl lg:text-xl md:text-base sm:text-md">
+          MoneySack employs industry-tested and approved solutions like
+          multi-factor authentication and 3DS Secure to protect your account
+          and card.
+        </p>
+      </div>
+
+      <div class="BOX bg-blue-400 bg-opacity-88 text-white text-center px-10 py-10 rounded-2xl">
+        <img src="img/tech3.svg" alt="tech3" class="w-20 h-20 m-auto" />
+        <p class="pt-12 text-xl lg:text-xl md:text-base sm:text-md">
+          Protecting your personal data is a priority for MoneySack We
+          guarantee the security and confidentiality.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------- section  pricing----------------------------->
+  <div class="pricing" >
+    <div class="head_pricing">
+      <h1 class="text-white text-center font-bold text-2xl mt-16">
+        Cards & Payments
+      </h1>
+      <h3 class="text-white italic text-center font-bold text-lg">
+        Select a pricing plan
+      </h3>
+    </div>
+
+    <div id="Payment" class="backg_table  flex justify-center
+       items-center mt-8
+        justify-around grow-0">
+
+      <div class="features text-white w-72 h-122   
+           text-start justify-center ml-5 m-auto items-center 
+           m-auto xl:block lg:block md:block sm:hidden  
+            ">
+
+        <div class="Accounts featuress justify-center m-auto">
+          <h2 class="font-bold text-2xl pb-16 "> Features </h2>
+          <h2 class="font-extrabold justify-around"> Accounts </h2>
+          <h4> Creation of a RIB </h4>
+        </div>
+        <div class="Cards featuress">
+          <h2 class="font-extrabold pt-16"> Cards </h2>
+          <h4> Debit Card </h4>
+          <h4> Virtual Card </h4>
+        </div>
+        <div class="Payments featuress">
+          <h2 class="font-extrabold pt-16"> Payments </h2>
+          <h4>Apple/Google Pay</h4>
+          <h4>Dollar Zone Pay</h4>
+        </div>
+        <div class="Transfers featuress">
+          <h2 class="font-extrabold pt-16"> Transfers </h2class=class=>
+            <h4>Transfer to another user moneySack (instant)</h4>
+            <h4>International Transfer Fees</h4>
+        </div>
+      </div>
+      <!--------- 3 pack---------- -->
+      <!-- pack pro -->
+      <!-- ------------------------- -->
+      <div class="three_pack flex gap-10 xl:flex lg:flex md:flex sm:block">
+
+        <div class="pack pack_pro w-72 h-122 lg:w-64 bg_pack_pro rounded-2xl ">
+          <h5 class="font-bold text-lg mx-8">PRO</h5>
+          <!-- icon cards and price -->
+          <div class="card&price flex items-center m-auto justify-center gap-5">
+            <img src="img/card_pro.svg" alt="card pro" class="w-100 h-50 sm:w-11 inline-block">
+            <h3 class="inline-block font-bold text-white text-lg md:text-sm">29.99$/month</h3>
+          </div>
+          <a id="btn_hero" href="#" class="inline-block 
+            rounded-full border border-sky-500 px-5 
+            py-3 text-md font-medium text-cyan-400 
+            hover:bg-sky-500 hover:text-white focus:outline-none 
+            focus:ring active:bg-sky-500 w-52 md:w-36 h-8	 
+            my-3 flex items-center m-auto justify-center my-6 ">
+            <span class="text-md md:text-xs text-center"> Feel free to contact us</span>
+          </a>
+          <div class="left_pack">
+            <div class="account items-center text-white flex gap-5 text-center justify-center m-0 mb-20 font-bold">
+            <p class="hidden md:hidden sm:block">Creation a RIB</p>
+            <p>free</p>
+          </div>
+          <div class="cards items-center text-white  text-center justify-center m-0 mb-20 font-bold">
+            <div class="flex gap-5 items-center  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Debit Card </p>
+              <p>free</p>
+            </div>
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Virtual Card</p>
+              <p>free</p>
+            </div>
+          </div>
+          </div>
+          <div class="left_pack">
+            <div class="payment items-center text-white text-center justify-center m-0 mb-20
+           font-bold ">
+            <div class="flex gap-5 items-center  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Apple/google Pay</p>
+              <p>free</p>
+            </div>
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Dollar zone payment </p>
+              <p>free</p>
+            </div>
+          </div>
+          <div class="Transfers items-center text-center justify-center m-0 mb-20 font-bold">
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Transfers </p>
+              <p>free</p>
+            </div>
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0 pb-5">
+              <p class="text_hid hidden md:hidden sm:block"> International Transfer</p>
+              <p>free</p>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+        <!-- regular---------------- -->
+        <!-- ------------------------- -->
+        <div class="pack pack_regular w-72 h-122 lg:w-64 bg_pack_regular rounded-2xl">
+          <h5 class="font-bold text-lg mx-8">Regular</h5>
+          <!-- icon cards and price -->
+          <div class="card&price flex items-center m-auto justify-center gap-5">
+            <img src="img/card_regular.svg" alt="card pro"  class="w-100 h-50 sm:w-11 inline-block">
+            <h3 class="inline-block font-bold text-lg md:text-sm">29.99$/month</h3>
+          </div>
+          <a id="btn_hero" href="#" class="inline-block 
+            rounded-full border border-sky-500 px-5 
+            py-3 text-md font-medium text-cyan-400 
+            hover:bg-sky-500 hover:text-white focus:outline-none 
+            focus:ring active:bg-sky-500 w-52 md:w-36 h-8	 
+            my-3 flex items-center m-auto justify-center my-6">
+            <span class="text-md md:text-xs text-center"> Feel free to contact us</span>
+          </a>
+          <div class="left_pack">
+            <div class="account items-center text-white flex gap-5 text-center justify-center m-0 mb-20 font-bold">
+            <p class="text_hid hidden md:hidden sm:block">Creation of a RIB</p>
+            <p>free</p>
+            </div>
+            <div class="cards items-center text-white  text-center justify-center m-0 mb-20 font-bold">
+            <div class="flex gap-5 items-center  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block md:hidden sm:block">Debit Card </p>
+              <p>free</p>
+            </div>
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block md:hidden sm:block">Virtual Card</p>
+              <p>free</p>
+            </div>
+            </div>
+          </div>
+
+          <div class="left_pack">
+            <div class="payment items-center text-white text-center justify-center m-0 mb-20 font-bold">
+            <div class="flex gap-5 items-center  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block md:hidden sm:block">Apple/google Pay</p>
+              <p>free</p>
+            </div>
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Dollar zone payment </p>
+              <p>free</p>
+            </div>
+            </div>
+            <div class="Transfers items-center text-center justify-center m-0 mb-20 font-bold">
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Transfers </p>
+              <p>free</p>
+            </div>
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0 pb-5">
+              <p class="text_hid hidden md:hidden sm:block"> International Transfer</p>
+              <p>free</p>
+            </div>
+            </div>
+        </div>
+          
+        </div>
+        <!--pack free-------------- -->
+        <!--------------------------- -->
+        <div class="pack pack_free w-72 h-122 lg:w-64 bg_pack_free rounded-2xl">
+          <h5 class="font-bold text-lg mx-8">FREE</h5>
+          <!-- icon cards and price -->
+          <div class="card&price flex items-center m-auto justify-center gap-5">
+            <img src="img/card_free.svg" alt="card pro"  class="w-100 h-50 sm:w-11 inline-block">
+            <h3 class="inline-block font-bold text-lg md:text-sm">29.99$/month</h3>
+          </div>
+          <a id="btn_hero" href="#" class="inline-block 
+            rounded-full border border-sky-500 px-5 
+            py-3 text-md font-medium text-cyan-400 
+            hover:bg-sky-500 hover:text-white focus:outline-none 
+            focus:ring active:bg-sky-500 w-52 md:w-36 h-8	 
+            my-3 flex items-center m-auto justify-center my-6">
+            <span class="text-md md:text-xs text-center"> Feel free to contact us</span>
+          </a>
+          <div class="left_pack">
+            <div class="account items-center text-white flex gap-5 text-center justify-center m-0 mb-20 font-bold">
+            <p class="text_hid hidden md:hidden sm:block">Creation of a RIB</p>
+            <p>free</p>
+          </div>
+          <div class="cards items-center text-white  text-center justify-center m-0 mb-20 font-bold">
+            <div class="flex gap-5 items-center  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Debit Card </p>
+              <p>free</p>
+            </div>
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Virtual Card</p>
+              <p>free</p>
+            </div>
+
+          </div>
+          </div>
+          
+
+          <div class="left_pack">
+            <div class="payment items-center text-white text-center justify-center m-0 mb-20 font-bold">
+            <div class="flex gap-5 items-center  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Apple/google Pay</p>
+              <p>free</p>
+            </div>
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Dollar zone payment </p>
+              <p>free</p>
+            </div>
+
+          </div>
+          <div class="Transfers items-center text-white text-center justify-center m-0 mb-20 font-bold">
+            <div class="flex gap-5 items-center  text-center justify-center m-0">
+              <p class="text_hid hidden md:hidden sm:block">Transfers </p>
+              <p>free</p>
+            </div>
+            <div class="flex gap-5 items-center text-white  text-center justify-center m-0 pb-5">
+              <p class="text_hid hidden md:hidden sm:block"> International Transfer</p>
+              <p>free</p>
+            </div>
+          </div>
+          </div>
+          
+
+        </div>
+      </div>
+
+
+    </div>
+  </div> 
+<!---------------------------------- Contact info--------------------------------------->
+  <form class="flex flex-col mx-auto px-28 items-center justify-center mt-10 mb-20">
+    <div class="headcontainer text-white">
+      <div class=" text-white">
+        <h1 class="text-3xl font-extrabold text-white sm:text-5xl mb-8"> Contact Information</h1>
+        <p class="mb-5"> Please feel free to contact us for any request. </p>
+      </div>
+      <div class="inputcontainer flex flex-col">
+        <div class="flex-wrap mb-8">
+          <label for="fullname">Full name </label>
+          <input type="text" id="fullname" name="fullname"
+            class="flex rounded-sm mb-5 w-full h-7 text-white bg-sky-400 bg-opacity-50" placeholder="fullName">
+          <label for="email">Email </label>
+          <input type="text" id="email" name="email"
+            class="flex rounded-sm w-full h-7	 text-white bg-sky-400 bg-opacity-50" placeholder="email">
+        </div>
+        <div class="relative">
+          <label for="message" class=" text-white">Message</label>
+          <textarea id="message" name="message" class="w-full bg-sky-400 bg-opacity-50 rounded border-0"></textarea>
+        </div>
+
+        <div
+          class="flex mx-auto mt-8 inline-block rounded-full border border-sky-500 px-12 py-3 text-sm font-medium text-cyan-400 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring active:bg-sky-500">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    </div>
+  </form>
+
+<!-------------------------------------- footer --------------------------------------------->
+   <footer class="backg_img ">
+    <div class="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+      <div class="text-center ">
+        <h2 class="text-3xl font-extrabold text-white sm:text-5xl">Explore moneysack</h2>
+        <p class="mx-auto mt-4 max-w-sm text-white align-center">
+          The financial platform dedicated to the Universal users,living Morocco, USA and UAE, combining advanced
+          technology, family connection and stimulating development in New York.
+        </p>
+        <a href="#"
+          class="mt-8 inline-block rounded-full border border-sky-500 px-12 py-3 text-sm font-medium text-cyan-400 hover:bg-sky-500 hover:text-white focus:outline-none focus:ring active:bg-sky-500">
+          Feel free to contact us
+        </a>
+      </div>
+      <div class="mt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
+        <ul class="flex flex-wrap justify-center m-gap-3 text-xs lg:justify-end">
+          <li>
+            <a href="logo"> <img src="img/logoNew.png" alt="logo" class="object-right-top"></a>
+          </li>
+          <ol class="flex flex-shrink-0 items-center justify-center mx-64 gap-12 sm:text-xs">
+            <li>
+              <a href="#" class="text-white transition hover:opacity-75"> Terms & Conditions </a>
+            </li>
+            <li>
+              <a href="#" class="text-white transition hover:opacity-75"> Legal notice </a>
+            </li>
+            <li>
+              <a href="#" class="text-white transition hover:opacity-75"> Cookies </a>
+            </li>
+          </ol>
+          <li>
+            <a href="#" class="text-gray-500 flex-row-reverse items-center transition hover:opacity-75"> Copyright ©
+              2024 - moneysack </a>
+          </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
